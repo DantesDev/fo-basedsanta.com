@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <script>
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+        svgExt: ".svg",
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83d\udc26\u200d\u2b1b",
+                "\ud83d\udc26\u200b\u2b1b"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      id="bricks-frontend-css"
+      href="./wp-content/themes/bricks/assets/css/frontend.min.css?ver=1730383603"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nextbricks_stylesheet-css"
+      href="./wp-content/plugins/nextbricks/elements/css/nextbricks.css?ver=1.6.3.3"
+      media=""
+    />
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="bricks-font-awesome-6-brands-css"
+      href="./wp-content/themes/bricks/assets/css/libs/font-awesome-6-brands.min.css?ver=1730383603"
+      media="all"
+    />
+    <style id="bricks-frontend-inline-inline-css">
+      :root {
+      }
+      html,
+      body {
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
+      :root {
+        --bricks-color-317b7c: #f5f5f5;
+        --bricks-color-3a21db: #e0e0e0;
+        --bricks-color-baaacd: #9e9e9e;
+        --bricks-color-c16a14: #616161;
+        --bricks-color-173b09: #424242;
+        --bricks-color-1d87ab: #212121;
+        --bricks-color-cf342b: #ffeb3b;
+        --bricks-color-441215: #ffc107;
+        --bricks-color-a3a9d0: #ff9800;
+        --bricks-color-e36fbb: #ff5722;
+        --bricks-color-18cf4c: #f44336;
+        --bricks-color-376dd3: #9c27b0;
+        --bricks-color-e4baf3: #2196f3;
+        --bricks-color-321f91: #03a9f4;
+        --bricks-color-0c5866: #81d4fa;
+        --bricks-color-77e398: #4caf50;
+        --bricks-color-9b1183: #8bc34a;
+        --bricks-color-e9d911: #cddc39;
+        --bricks-color-cjenni: #950a0a;
+      }
+      #brxe-iavrtl {
+        align-items: center;
+      }
+      #brxe-gaxrjr .bc-unfold-reveal__element {
+        font-family: "Mountains of Christmas";
+        color: var(--bricks-color-317b7c);
+        font-weight: 700;
+        font-size: 10rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      #brxe-yaeopo {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        #brxe-yaeopo {
+          width: 70%;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-yaeopo {
+          width: 100%;
+        }
+      }
+      #brxe-onisjy {
+        align-items: center;
+        justify-content: flex-end;
+      }
+      #brxe-fbmyew {
+        justify-content: flex-end;
+        background-image: url(./wp-content/uploads/2024/10/an-illustration-of-a-christmas-themed-living-room-x5_WKpoCTLaB-BhIwqthMQ-JDq_hocvRJ-hFoV0gNpbKg-1024x574.jpeg);
+        background-size: cover;
+        max-height: 100vh;
+        position: relative;
+      }
+      :where(#brxe-fbmyew > *) {
+        position: relative;
+      }
+      #brxe-fbmyew::before {
+        background-image: radial-gradient(
+          circle at center,
+          rgba(0, 0, 0, 0.78),
+          rgba(0, 82, 255, 0.28)
+        );
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      #brxe-uxdhol {
+        width: 100%;
+        margin-top: -150px;
+        z-index: 9;
+      }
+      @media (max-width: 991px) {
+        #brxe-uxdhol {
+          margin-top: -120px;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-uxdhol {
+          margin-top: -110px;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-uxdhol {
+          margin-top: -43px;
+        }
+      }
+      #brxe-znxsmi {
+        align-self: center !important;
+        align-items: center;
+      }
+      #brxe-oxuwtc {
+        font-family: "Mountains of Christmas";
+        color: var(--bricks-color-317b7c);
+        font-size: 10rem;
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        #brxe-oxuwtc {
+          text-align: center;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-oxuwtc {
+          text-align: center;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-oxuwtc {
+          text-align: center;
+        }
+      }
+      #brxe-vxtycy {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+      }
+      @media (max-width: 767px) {
+        #brxe-vxtycy {
+          padding-top: 60px;
+        }
+      }
+      #brxe-mtwoql {
+        text-align: center;
+        color: var(--bricks-color-317b7c);
+        font-weight: 500;
+        font-size: 30px;
+        font-family: "Outfit";
+      }
+      #brxe-mtwoql a {
+        text-align: center;
+        color: var(--bricks-color-317b7c);
+        font-weight: 500;
+        font-size: 30px;
+        font-family: "Outfit";
+        font-size: inherit;
+      }
+      @media (max-width: 767px) {
+        #brxe-mtwoql {
+          font-size: 19px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        #brxe-mtwoql a {
+          font-size: 19px;
+          font-size: inherit;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-mtwoql {
+          font-size: 18px;
+        }
+        #brxe-mtwoql a {
+          font-size: 18px;
+          font-size: inherit;
+        }
+      }
+      #brxe-qjmghz {
+        align-items: center;
+      }
+      #brxe-bbsuzl {
+        padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+      }
+      #brxe-svqqzf {
+        background-color: #950a0a;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #brxe-lsquzi {
+        width: 100%;
+        margin-top: -150px;
+        z-index: 9;
+      }
+      @media (max-width: 991px) {
+        #brxe-lsquzi {
+          margin-top: -120px;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-lsquzi {
+          margin-top: -110px;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-lsquzi {
+          margin-top: -43px;
+        }
+      }
+      #brxe-ywpous {
+        align-self: center !important;
+        align-items: center;
+      }
+      #brxe-jojeju {
+        font-family: "Mountains of Christmas";
+        color: var(--bricks-color-317b7c);
+        font-size: 10rem;
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        #brxe-jojeju {
+          text-align: center;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-jojeju {
+          text-align: center;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-jojeju {
+          text-align: center;
+          font-size: 6rem;
+        }
+      }
+      #brxe-zorcyk {
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+      }
+      @media (max-width: 767px) {
+        #brxe-zorcyk {
+          padding-top: 100px;
+        }
+      }
+      #brxe-oveeav {
+        color: var(--bricks-color-317b7c);
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 40px;
+      }
+      #brxe-oveeav a {
+        color: var(--bricks-color-317b7c);
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 40px;
+        font-size: inherit;
+      }
+      @media (max-width: 767px) {
+        #brxe-oveeav {
+          font-size: 30px;
+        }
+        #brxe-oveeav a {
+          font-size: 30px;
+          font-size: inherit;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-oveeav {
+          font-family: "Outfit";
+        }
+        #brxe-oveeav a {
+          font-family: "Outfit";
+          font-size: inherit;
+        }
+      }
+      #brxe-rbuynb {
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      @media (max-width: 767px) {
+        #brxe-rbuynb {
+          padding-top: 50px;
+        }
+      }
+      #brxe-uqpjkx {
+        padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+      }
+      #brxe-txjpij {
+        background-color: #121212;
+        justify-content: center;
+        align-items: center;
+      }
+      #brxe-wxqfkh {
+        font-family: "Mountains of Christmas";
+        color: var(--bricks-color-317b7c);
+        font-size: 10rem;
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        #brxe-wxqfkh {
+          text-align: center;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-wxqfkh {
+          text-align: center;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-wxqfkh {
+          text-align: center;
+          font-size: 6rem;
+        }
+      }
+      #brxe-dvjlpi {
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 767px) {
+        #brxe-dvjlpi {
+          padding-top: 100px;
+        }
+      }
+      #brxe-jzdmdu {
+        color: var(--bricks-color-317b7c);
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      #brxe-jzdmdu a {
+        color: var(--bricks-color-317b7c);
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 40px;
+        font-size: inherit;
+      }
+      @media (max-width: 767px) {
+        #brxe-jzdmdu {
+          font-size: 30px;
+        }
+        #brxe-jzdmdu a {
+          font-size: 30px;
+          font-size: inherit;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-jzdmdu {
+          font-family: "Outfit";
+        }
+        #brxe-jzdmdu a {
+          font-family: "Outfit";
+          font-size: inherit;
+        }
+      }
+      #brxe-daqxgk {
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      @media (max-width: 767px) {
+        #brxe-daqxgk {
+          padding-top: 50px;
+        }
+      }
+      #brxe-kriuee {
+        width: 60px;
+      }
+      #brxe-cfjkgx {
+        width: 60px;
+      }
+      #brxe-rvggtx {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 20%;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding-bottom: 30px;
+      }
+      @media (max-width: 767px) {
+        #brxe-rvggtx {
+          padding-top: 50px;
+        }
+      }
+      #brxe-tjhhin {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+      }
+      #brxe-dpjegt {
+        background-color: #121212;
+        background-image: url(./wp-content/uploads/2024/11/an-illustration-of-a-run-down-pub-with-a-dirty-flo-tB5f_gdAQsKwD_t8Uul7_w-2EQgbSu5TQusqWVaTLtR9w.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        position: relative;
+      }
+      :where(#brxe-dpjegt > *) {
+        position: relative;
+      }
+      #brxe-dpjegt::before {
+        background-image: linear-gradient(
+          rgba(18, 18, 18, 0.72),
+          rgba(18, 18, 18, 0.72)
+        );
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      #brxe-lvbncv {
+        width: 100%;
+        margin-top: -150px;
+        z-index: 9;
+      }
+      @media (max-width: 991px) {
+        #brxe-lvbncv {
+          margin-top: -120px;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-lvbncv {
+          margin-top: -110px;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-lvbncv {
+          margin-top: -43px;
+        }
+      }
+      #brxe-dxyhtq {
+        align-self: center !important;
+        align-items: center;
+      }
+      #brxe-ctyggr {
+        font-family: "Mountains of Christmas";
+        color: var(--bricks-color-317b7c);
+        font-size: 10rem;
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      @media (max-width: 991px) {
+        #brxe-ctyggr {
+          text-align: center;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-ctyggr {
+          text-align: center;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-ctyggr {
+          text-align: center;
+          font-size: 6rem;
+        }
+      }
+      #brxe-nwgfsl {
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+      }
+      @media (max-width: 767px) {
+        #brxe-nwgfsl {
+          padding-top: 100px;
+        }
+      }
+      #brxe-xazple {
+        color: var(--bricks-color-317b7c);
+        fill: var(--bricks-color-317b7c);
+      }
+      #brxe-hvfbqy {
+        color: var(--bricks-color-317b7c);
+        fill: var(--bricks-color-317b7c);
+      }
+      #brxe-apnfeo {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 20%;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding-bottom: 30px;
+      }
+      @media (max-width: 767px) {
+        #brxe-apnfeo {
+          padding-top: 50px;
+        }
+      }
+      #brxe-yzoxjn {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      @media (max-width: 767px) {
+        #brxe-yzoxjn {
+          flex-direction: column;
+        }
+      }
+      #brxe-jncuex {
+        background-color: #121212;
+        background-image: url(./wp-content/uploads/2024/11/an-illustration-of-a-toilet-in-a-run-down-antisoci-gmDW53K-QvK_MN33x_mjwQ-OVGIIzlJTq6jdjtEhjrQYQ.jpeg);
+        background-size: cover;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 200px;
+        position: relative;
+      }
+      :where(#brxe-jncuex > *) {
+        position: relative;
+      }
+      #brxe-jncuex::before {
+        background-image: linear-gradient(
+          rgba(18, 18, 18, 0.86),
+          rgba(18, 18, 18, 0.86)
+        );
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      #brxe-zwlavt {
+        width: 100%;
+        margin-top: -150px;
+        z-index: 9;
+      }
+      @media (max-width: 991px) {
+        #brxe-zwlavt {
+          margin-top: -120px;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-zwlavt {
+          margin-top: -110px;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-zwlavt {
+          margin-top: -43px;
+        }
+      }
+      #brxe-vfzviv {
+        align-self: center !important;
+        align-items: center;
+      }
+      #brxe-jvxkai {
+        font-family: "Mountains of Christmas";
+        color: var(--bricks-color-317b7c);
+        font-size: 10rem;
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        #brxe-jvxkai {
+          text-align: center;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-jvxkai {
+          text-align: center;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-jvxkai {
+          text-align: center;
+          font-size: 6rem;
+        }
+      }
+      #brxe-awatpx {
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+      }
+      @media (max-width: 767px) {
+        #brxe-awatpx {
+          padding-top: 100px;
+        }
+      }
+      #brxe-zgdmye {
+        color: var(--bricks-color-317b7c);
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 40px;
+      }
+      #brxe-zgdmye a {
+        color: var(--bricks-color-317b7c);
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 40px;
+        font-size: inherit;
+      }
+      @media (max-width: 767px) {
+        #brxe-zgdmye {
+          font-size: 25px;
+        }
+        #brxe-zgdmye a {
+          font-size: 25px;
+          font-size: inherit;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-zgdmye {
+          font-family: "Outfit";
+        }
+        #brxe-zgdmye a {
+          font-family: "Outfit";
+          font-size: inherit;
+        }
+      }
+      #brxe-ebovpv {
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      @media (max-width: 767px) {
+        #brxe-ebovpv {
+          padding-top: 50px;
+        }
+      }
+      #brxe-rskqzi {
+        padding-bottom: 50px;
+      }
+      #brxe-tjokbt {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      @media (max-width: 767px) {
+        #brxe-tjokbt {
+          flex-direction: column;
+        }
+      }
+      #brxe-pxrzta {
+        background-color: var(--bricks-color-cjenni);
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(#950a0a, #950a0a);
+        padding-bottom: 100px;
+      }
+      @media (max-width: 478px) {
+        #brxe-pxrzta {
+          background-color: var(--bricks-color-cjenni);
+        }
+      }
+      #brxe-topqyk {
+        font-family: "Mountains of Christmas";
+        color: #121212;
+        font-size: 10rem;
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        #brxe-topqyk {
+          text-align: center;
+        }
+      }
+      @media (max-width: 767px) {
+        #brxe-topqyk {
+          text-align: center;
+        }
+      }
+      @media (max-width: 478px) {
+        #brxe-topqyk {
+          text-align: center;
+          font-size: 6rem;
+        }
+      }
+      #brxe-yueavy {
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+      }
+      @media (max-width: 767px) {
+        #brxe-yueavy {
+          padding-top: 100px;
+        }
+      }
+      #brxe-bfwukx {
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 19px;
+        color: #121212;
+        padding-top: 50px;
+      }
+      #brxe-bfwukx a {
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 19px;
+        color: #121212;
+        font-size: inherit;
+      }
+      @media (max-width: 767px) {
+        #brxe-bfwukx {
+          font-size: 20px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        #brxe-bfwukx a {
+          font-size: 20px;
+          font-size: inherit;
+        }
+      }
+      #brxe-zbwfbf {
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 767px) {
+        #brxe-zbwfbf {
+          padding-top: 50px;
+        }
+      }
+      #brxe-qupdci {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      @media (max-width: 767px) {
+        #brxe-qupdci {
+          flex-direction: column;
+        }
+      }
+      #brxe-dersou {
+        background-color: #f5f5f5;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -2px;
+      }
+      #brxe-ljljjo {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+      }
+      @media (max-width: 767px) {
+        #brxe-ljljjo {
+          flex-direction: column;
+        }
+      }
+      #brxe-znnmal {
+        background-color: var(--bricks-color-317b7c);
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="bricks-google-fonts-css"
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&#038;display=swap&#038;family=Outfit:wght@100;200;300;400;500;600;700;800;900&#038;display=swap"
+      media="all"
+    />
+    <script
+      src="./wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+      id="jquery-core-js"
+    ></script>
+    <link rel="https://api.w.org/" href="./wp-json/" />
+    <link
+      rel="alternate"
+      title="JSON"
+      type="application/json"
+      href="./wp-json/wp/v2/pages/10"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="./xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.6.2" />
+    <link rel="canonical" href="./" />
+    <link rel="shortlink" href="./" />
+    <style id="wp-custom-css">
+      html,
+      body {
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
+    </style>
+
+    <!-- Facebook Open Graph (by Bricks) -->
+    <meta property="og:url" content="./" />
+    <meta property="og:title" content="$ANTA" />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body
+    class="home page-template-default page page-id-10 brx-body bricks-is-frontend wp-embed-responsive"
+  >
+    <a class="skip-link" href="#brx-content" aria-label="Skip to main content"
+      >Skip to main content</a
+    >
+
+    <main id="brx-content">
+      <section id="brxe-fbmyew" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-iavrtl" class="brxe-block bricks-lazy-hidden"></div>
+        <h3
+          id="brxe-gaxrjr"
+          data-script-id="gaxrjr"
+          class="brxe-unfold-reveal bc-unfold-reveal"
+        >
+          <span
+            class="bc-unfold-reveal__element"
+            data-hide
+            data-type="lines"
+            data-intensity="300"
+            data-delay="0"
+            data-duration="0.3"
+            data-stagger="0.06"
+            data-ease="expo"
+            data-from="left"
+            data-scroller="body"
+            data-toggleActions="play none none none"
+            data-trigger="this"
+            data-start="top bottom"
+            data-end="false"
+            data-scrub
+            data-disable-builder="0"
+            data-animationType
+            data-remove-scroll="0"
+            data-classTriggerClick="0"
+            data-classTriggerHover="0"
+            >$ANTA</span
+          >
+        </h3>
+        <div id="brxe-onisjy" class="brxe-container bricks-lazy-hidden">
+          <div
+            id="brxe-yaeopo"
+            data-script-id="yaeopo"
+            class="brxe-bclottie bc-lottie"
+            data-interactions='[{"id":"sozour","trigger":"enterView","action":"startAnimation","animationType":"fadeInUpBig","runOnce":"1"}]'
+            data-interaction-id="9142d9"
+            data-interaction-hidden-on-load="1"
+          >
+            <lottie-player
+              autoplay
+              loop
+              class="bc-lottie__element bc-lottie__to-hide"
+              src="./wp-content/uploads/2024/11/08_smoke-heart1-1.json"
+              speed="1"
+              data-hayautoplay="0"
+              data-mode="cursor"
+              data-type="hover-seek"
+              data-startvisibility="0"
+              data-endvisibility="1"
+              data-startframe="0"
+              data-endframe="120"
+              data-forceflag="1"
+            ></lottie-player>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-svqqzf" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-znxsmi" class="brxe-block bricks-lazy-hidden">
+          <img
+            width="1024"
+            height="243"
+            src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%201024%20243&#039;%3E%3C/svg%3E"
+            class="brxe-image css-filter size-large bricks-lazy-hidden"
+            alt=""
+            id="brxe-uxdhol"
+            decoding="async"
+            fetchpriority="high"
+            data-src="./wp-content/uploads/2024/11/christmasdeco-1024x243.png"
+            data-type="string"
+            data-sizes="(max-width: 1024px) 100vw, 1024px"
+            data-srcset="./wp-content/uploads/2024/11/christmasdeco-1024x243.png 1024w, ./wp-content/uploads/2024/11/basechristmasdeco-300x71.webp 300w, ./wp-content/uploads/2024/11/basechristmasdeco-768x182.webp 768w, ./wp-content/uploads/2024/11/basechristmasdeco-1536x364.webp 1536w, ./wp-content/uploads/2024/11/basechristmasdeco-2048x486.webp 2048w"
+          />
+        </div>
+        <div id="brxe-vxtycy" class="brxe-container bricks-lazy-hidden">
+          <h3
+            id="brxe-oxuwtc"
+            class="brxe-heading"
+            data-interactions='[{"id":"mdzxtp","trigger":"enterView","action":"startAnimation","runOnce":"1","animationType":"fadeInUp"}]'
+            data-interaction-id="fe0afb"
+            data-interaction-hidden-on-load="1"
+          >
+            ABOUT $ANTA
+          </h3>
+        </div>
+        <div id="brxe-bbsuzl" class="brxe-container bricks-lazy-hidden">
+          <div id="brxe-qjmghz" class="brxe-block bricks-lazy-hidden">
+            <div
+              id="brxe-mtwoql"
+              class="brxe-text"
+              data-interactions='[{"id":"rrkrom","trigger":"enterView","action":"startAnimation","animationType":"fadeInUp","animationDelay":"0.5","runOnce":"1"}]'
+              data-interaction-id="54a38c"
+              data-interaction-hidden-on-load="1"
+            >
+              <p class="p1">
+                Since everyone’s ditched him for online shopping, Santa’s hit
+                rock bottom.<br />Jobless, half-naked, and perpetually smashed,
+                he stumbles around the North Pole with a bottle in hand, yelling
+                at the reindeer, “Christmas is dead, and the only sack I’m
+                delivering this year is…well, you can guess.”
+              </p>
+              <p class="p1">
+                The “nice list” got traded in for a list of poor life choices
+                and blurry one-night stands. Mrs. Claus left, the elves
+                unionized, and now Santa’s biggest gift this season is his own
+                hangover. <br />The only “Ho Ho Ho” he cares about? The three
+                empty bottles rolling around the floor.
+              </p>
+              <p class="p1">
+                Christmas? It’s become the annual festival of “f*ck it all” in
+                Santa’s ice-cold corner of hell.
+              </p>
+            </div>
+            <div
+              id="brxe-gfypcb"
+              data-script-id="gfypcb"
+              class="brxe-bclottie bc-lottie"
+            >
+              <lottie-player
+                autoplay
+                loop
+                class="bc-lottie__element bc-lottie__to-hide"
+                src="./wp-content/uploads/2024/10/$anta-drinking.json"
+                speed="1"
+                data-hayautoplay="0"
+                data-mode="cursor"
+                data-type="hover-seek"
+                data-startvisibility="0"
+                data-endvisibility="1"
+                data-startframe="0"
+                data-endframe="120"
+                data-forceflag="1"
+              ></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-txjpij" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-ywpous" class="brxe-block bricks-lazy-hidden">
+          <img
+            width="1024"
+            height="243"
+            src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%201024%20243&#039;%3E%3C/svg%3E"
+            class="brxe-image css-filter size-large bricks-lazy-hidden"
+            alt=""
+            id="brxe-lsquzi"
+            decoding="async"
+            data-src="./wp-content/uploads/2024/11/christmasdeco-1024x243.png"
+            data-type="string"
+            data-sizes="(max-width: 1024px) 100vw, 1024px"
+            data-srcset="./wp-content/uploads/2024/11/christmasdeco-1024x243.png 1024w, ./wp-content/uploads/2024/11/basechristmasdeco-300x71.webp 300w, ./wp-content/uploads/2024/11/basechristmasdeco-768x182.webp 768w, ./wp-content/uploads/2024/11/basechristmasdeco-1536x364.webp 1536w, ./wp-content/uploads/2024/11/basechristmasdeco-2048x486.webp 2048w"
+          />
+        </div>
+        <div id="brxe-zorcyk" class="brxe-container bricks-lazy-hidden">
+          <h3
+            id="brxe-jojeju"
+            class="brxe-heading"
+            data-interactions='[{"id":"qmdiws","trigger":"enterView","runOnce":"1","action":"startAnimation","animationType":"fadeInUp"}]'
+            data-interaction-id="7f2355"
+            data-interaction-hidden-on-load="1"
+          >
+            TOKENOMICS
+          </h3>
+        </div>
+        <div id="brxe-uqpjkx" class="brxe-container bricks-lazy-hidden">
+          <div
+            id="brxe-foctaa"
+            data-script-id="foctaa"
+            class="brxe-bclottie bc-lottie"
+            data-interactions='[{"id":"gzekay","trigger":"enterView","action":"startAnimation","animationType":"fadeInUp","animationDelay":"0.5","runOnce":"1"}]'
+            data-interaction-id="87a7bc"
+            data-interaction-hidden-on-load="1"
+          >
+            <lottie-player
+              autoplay
+              loop
+              class="bc-lottie__element bc-lottie__to-hide"
+              src="./wp-content/uploads/2024/11/05_naked1.json"
+              speed="1"
+              data-hayautoplay="0"
+              data-mode="cursor"
+              data-type="hover-seek"
+              data-startvisibility="0"
+              data-endvisibility="1"
+              data-startframe="0"
+              data-endframe="120"
+              data-forceflag="1"
+            ></lottie-player>
+          </div>
+          <div id="brxe-rbuynb" class="brxe-block bricks-lazy-hidden">
+            <div id="brxe-oveeav" class="brxe-text">
+              <p style="text-align: center">
+                1BN $ANTA<br />NO TX<br />LP LOCKED<br />RENOUNCED
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-dpjegt" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-dvjlpi" class="brxe-container bricks-lazy-hidden">
+          <h3
+            id="brxe-wxqfkh"
+            class="brxe-heading"
+            data-interactions='[{"id":"wrcvyk","trigger":"enterView","action":"startAnimation","animationType":"fadeInUp","runOnce":"1"}]'
+            data-interaction-id="3e7bc5"
+            data-interaction-hidden-on-load="1"
+          >
+            CONTRACT ADDRESS
+          </h3>
+        </div>
+        <div id="brxe-daqxgk" class="brxe-block bricks-lazy-hidden">
+          <div
+            id="brxe-jzdmdu"
+            class="brxe-text"
+            data-interactions='[{"id":"mvqrnt"}]'
+            data-interaction-id="65dae2"
+          >
+            <p class="p1">0x1111111111111111111111111111111111111111</p>
+          </div>
+        </div>
+        <div id="brxe-rvggtx" class="brxe-block bricks-lazy-hidden">
+          <a
+            id="brxe-kriuee"
+            class="brxe-image tag"
+            href="https://www.dextools.io/"
+            ><img
+              width="180"
+              height="180"
+              src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20180%20180&#039;%3E%3C/svg%3E"
+              class="css-filter size-full bricks-lazy-hidden"
+              alt=""
+              decoding="async"
+              data-src="./wp-content/uploads/2024/11/dextools.webp"
+              data-type="string"
+              data-sizes="(max-width: 180px) 100vw, 180px"
+              data-srcset="./wp-content/uploads/2024/11/dextools.webp 180w, ./wp-content/uploads/2024/11/dextools-150x150.webp 150w" /></a
+          ><a
+            id="brxe-cfjkgx"
+            class="brxe-image tag"
+            href="https://dexscreener.com/"
+            ><img
+              width="2000"
+              height="2000"
+              src="./wp-content/uploads/2024/11/dex-screener-seeklogo.png"
+              class="css-filter size-full bricks-lazy-hidden"
+              alt=""
+              decoding="async"
+              data-src="./wp-content/uploads/2024/11/dex-screener-seeklogo.png"
+              data-type="string"
+              data-sizes="(max-width: 2000px) 100vw, 2000px"
+              data-srcset="./wp-content/uploads/2024/11/dex-screener-seeklogo.png 2000w, ./wp-content/uploads/2024/11/dex-screener-seeklogo-300x300.png 300w, ./wp-content/uploads/2024/11/dex-screener-seeklogo-1024x1024.png 1024w, ./wp-content/uploads/2024/11/dex-screener-seeklogo-150x150.png 150w, ./wp-content/uploads/2024/11/dex-screener-seeklogo-768x768.png 768w, ./wp-content/uploads/2024/11/dex-screener-seeklogo-1536x1536.png 1536w"
+          /></a>
+        </div>
+        <div id="brxe-tjhhin" class="brxe-container bricks-lazy-hidden">
+          <div
+            id="brxe-zkxuat"
+            data-script-id="zkxuat"
+            class="brxe-bclottie bc-lottie"
+          >
+            <lottie-player
+              autoplay
+              loop
+              class="bc-lottie__element bc-lottie__to-hide"
+              src="./wp-content/uploads/2024/10/banta_ok.json"
+              speed="1"
+              data-hayautoplay="0"
+              data-mode="cursor"
+              data-type="hover-seek"
+              data-startvisibility="0"
+              data-endvisibility="1"
+              data-startframe="0"
+              data-endframe="120"
+              data-forceflag="1"
+            ></lottie-player>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-jncuex" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-dxyhtq" class="brxe-block bricks-lazy-hidden">
+          <img
+            width="1024"
+            height="243"
+            src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%201024%20243&#039;%3E%3C/svg%3E"
+            class="brxe-image css-filter size-large bricks-lazy-hidden"
+            alt=""
+            id="brxe-lvbncv"
+            decoding="async"
+            data-src="./wp-content/uploads/2024/11/christmasdeco-1024x243.png"
+            data-type="string"
+            data-sizes="(max-width: 1024px) 100vw, 1024px"
+            data-srcset="./wp-content/uploads/2024/11/christmasdeco-1024x243.png 1024w, ./wp-content/uploads/2024/11/basechristmasdeco-300x71.webp 300w, ./wp-content/uploads/2024/11/basechristmasdeco-768x182.webp 768w, ./wp-content/uploads/2024/11/basechristmasdeco-1536x364.webp 1536w, ./wp-content/uploads/2024/11/basechristmasdeco-2048x486.webp 2048w"
+          />
+        </div>
+        <div id="brxe-nwgfsl" class="brxe-container bricks-lazy-hidden">
+          <h3 id="brxe-ctyggr" class="brxe-heading">SOCIALS</h3>
+        </div>
+        <div id="brxe-yzoxjn" class="brxe-container bricks-lazy-hidden">
+          <div id="brxe-apnfeo" class="brxe-block bricks-lazy-hidden">
+            <a href="https://x.com/"
+              ><i
+                id="brxe-xazple"
+                class="brxe-icon fab fa-square-x-twitter"
+              ></i></a
+            ><a href="https://t.me/"
+              ><i id="brxe-hvfbqy" class="brxe-icon fab fa-telegram-plane"></i
+            ></a>
+          </div>
+          <div
+            id="brxe-taegva"
+            data-script-id="taegva"
+            class="brxe-bclottie bc-lottie"
+          >
+            <lottie-player
+              autoplay
+              loop
+              class="bc-lottie__element bc-lottie__to-hide"
+              src="./wp-content/uploads/2024/11/01_sex1.json"
+              speed="1"
+              data-hayautoplay="0"
+              data-mode="cursor"
+              data-type="hover-seek"
+              data-startvisibility="0"
+              data-endvisibility="1"
+              data-startframe="0"
+              data-endframe="120"
+              data-forceflag="1"
+            ></lottie-player>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-pxrzta" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-vfzviv" class="brxe-block bricks-lazy-hidden">
+          <img
+            width="1024"
+            height="243"
+            src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%201024%20243&#039;%3E%3C/svg%3E"
+            class="brxe-image css-filter size-large bricks-lazy-hidden"
+            alt=""
+            id="brxe-zwlavt"
+            decoding="async"
+            data-src="./wp-content/uploads/2024/11/christmasdeco-1024x243.png"
+            data-type="string"
+            data-sizes="(max-width: 1024px) 100vw, 1024px"
+            data-srcset="./wp-content/uploads/2024/11/christmasdeco-1024x243.png 1024w, ./wp-content/uploads/2024/11/basechristmasdeco-300x71.webp 300w, ./wp-content/uploads/2024/11/basechristmasdeco-768x182.webp 768w, ./wp-content/uploads/2024/11/basechristmasdeco-1536x364.webp 1536w, ./wp-content/uploads/2024/11/basechristmasdeco-2048x486.webp 2048w"
+          />
+        </div>
+        <div id="brxe-awatpx" class="brxe-container bricks-lazy-hidden">
+          <h3 id="brxe-jvxkai" class="brxe-heading">CONTACT</h3>
+        </div>
+        <div id="brxe-tjokbt" class="brxe-container bricks-lazy-hidden">
+          <div id="brxe-ebovpv" class="brxe-block bricks-lazy-hidden">
+            <div id="brxe-zgdmye" class="brxe-text">
+              <p><strong>AAAAAAA@AAAAAAA.COM</strong></p>
+            </div>
+          </div>
+          <div
+            id="brxe-rskqzi"
+            data-script-id="rskqzi"
+            class="brxe-bclottie bc-lottie"
+          >
+            <lottie-player
+              autoplay
+              loop
+              class="bc-lottie__element bc-lottie__to-hide"
+              src="./wp-content/uploads/2024/10/$anta-puke.json"
+              speed="1"
+              data-hayautoplay="0"
+              data-mode="cursor"
+              data-type="hover-seek"
+              data-startvisibility="0"
+              data-endvisibility="1"
+              data-startframe="0"
+              data-endframe="120"
+              data-forceflag="1"
+            ></lottie-player>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-dersou" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-yueavy" class="brxe-container bricks-lazy-hidden">
+          <h3 id="brxe-topqyk" class="brxe-heading">DISCLAIMER</h3>
+        </div>
+        <div
+          id="brxe-irqkki"
+          data-script-id="irqkki"
+          class="brxe-bclottie bc-lottie"
+        >
+          <lottie-player
+            autoplay
+            loop
+            class="bc-lottie__element bc-lottie__to-hide"
+            src="./wp-content/uploads/2024/11/$ANTA-Shit.json"
+            speed="1"
+            data-hayautoplay="0"
+            data-mode="cursor"
+            data-type="hover-seek"
+            data-startvisibility="0"
+            data-endvisibility="1"
+            data-startframe="0"
+            data-endframe="120"
+            data-forceflag="1"
+          ></lottie-player>
+        </div>
+        <div id="brxe-qupdci" class="brxe-container bricks-lazy-hidden">
+          <div id="brxe-zbwfbf" class="brxe-block bricks-lazy-hidden">
+            <div id="brxe-bfwukx" class="brxe-text">
+              <p>
+                This meme coin is offered solely for entertainment purposes and
+                should not be considered an investment or financial advice. The
+                developers assume no responsibility or liability for any
+                financial losses, technical errors, or other damages that may
+                arise from the use of this coin. Users are expressly advised
+                that meme coins are highly volatile and speculative, and a total
+                loss of any funds used is very likely.
+              </p>
+              <p><strong>Not an Investment Recommendation</strong></p>
+              <p>
+                This coin is intended purely for entertainment and is not
+                designed as a financial investment. There are no promises
+                regarding future value, liquidity, stability, or security of
+                this coin. Users act at their own risk and bear full
+                responsibility for any decisions they make.
+              </p>
+              <p><strong>No Warranties</strong></p>
+              <p>
+                This coin and all related services are provided “as is” without
+                any warranties of any kind. The developers reserve the right to
+                make changes or discontinue the project at any time without
+                notice. Use of this coin is entirely at the user’s own risk and
+                responsibility.
+              </p>
+              <p><strong>Jurisdiction and Local Laws</strong></p>
+              <p>
+                Users are responsible for determining whether the acquisition or
+                use of this coin is permitted in their jurisdiction. This
+                project is not designed to fall under any specific jurisdiction
+                and operates on a decentralized basis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brxe-znnmal" class="brxe-section bricks-lazy-hidden">
+        <div id="brxe-ljljjo" class="brxe-container bricks-lazy-hidden">
+          <div
+            id="brxe-ndvlnb"
+            data-script-id="ndvlnb"
+            class="brxe-bclottie bc-lottie"
+          >
+            <lottie-player
+              autoplay
+              loop
+              class="bc-lottie__element bc-lottie__to-hide"
+              src="./wp-content/uploads/2024/11/$anta-fu-1.json"
+              speed="1"
+              data-hayautoplay="0"
+              data-mode="cursor"
+              data-type="hover-seek"
+              data-startvisibility="0"
+              data-endvisibility="1"
+              data-startframe="0"
+              data-endframe="120"
+              data-forceflag="1"
+            ></lottie-player>
+          </div>
+        </div>
+      </section>
+    </main>
+    <link
+      rel="stylesheet"
+      id="bricks-animate-css"
+      href="./wp-content/themes/bricks/assets/css/libs/animate.min.css?ver=1730383603"
+      media="all"
+    />
+    <script id="bricks-scripts-js-extra">
+      var bricksData = {
+        debug: "",
+        locale: "en_US",
+        nonce: "365d418f74",
+        formNonce: "4627f5a70c",
+        wpRestNonce: "1ae8797e25",
+        postId: "10",
+        recaptchaIds: [],
+        animatedTypingInstances: [],
+        videoInstances: [],
+        splideInstances: [],
+        tocbotInstances: [],
+        swiperInstances: [],
+        queryLoopInstances: [],
+        interactions: [],
+        filterInstances: [],
+        isotopeInstances: [],
+        mapStyles: {
+          ultraLightWithLabels: {
+            label: "Ultra light with labels",
+            style:
+              '[ { "featureType": "water", "elementType": "geometry", "stylers": [ { "color": "#e9e9e9" }, { "lightness": 17 } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "color": "#f5f5f5" }, { "lightness": 20 } ] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [ { "color": "#ffffff" }, { "lightness": 17 } ] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [ { "color": "#ffffff" }, { "lightness": 29 }, { "weight": 0.2 } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#ffffff" }, { "lightness": 18 } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "color": "#ffffff" }, { "lightness": 16 } ] }, { "featureType": "poi", "elementType": "geometry", "stylers": [ { "color": "#f5f5f5" }, { "lightness": 21 } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#dedede" }, { "lightness": 21 } ] }, { "elementType": "labels.text.stroke", "stylers": [ { "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 } ] }, { "elementType": "labels.text.fill", "stylers": [ { "saturation": 36 }, { "color": "#333333" }, { "lightness": 40 } ] }, { "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "transit", "elementType": "geometry", "stylers": [ { "color": "#f2f2f2" }, { "lightness": 19 } ] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [ { "color": "#fefefe" }, { "lightness": 20 } ] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [ { "color": "#fefefe" }, { "lightness": 17 }, { "weight": 1.2 } ] } ]',
+          },
+          blueWater: {
+            label: "Blue water",
+            style:
+              '[ { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [ { "color": "#444444" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "color": "#f2f2f2" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 45 } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "color": "#46bcec" }, { "visibility": "on" } ] } ]',
+          },
+          lightDream: {
+            label: "Light dream",
+            style:
+              '[ { "featureType": "landscape", "stylers": [ { "hue": "#FFBB00" }, { "saturation": 43.400000000000006 }, { "lightness": 37.599999999999994 }, { "gamma": 1 } ] }, { "featureType": "road.highway", "stylers": [ { "hue": "#FFC200" }, { "saturation": -61.8 }, { "lightness": 45.599999999999994 }, { "gamma": 1 } ] }, { "featureType": "road.arterial", "stylers": [ { "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 51.19999999999999 }, { "gamma": 1 } ] }, { "featureType": "road.local", "stylers": [ { "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 52 }, { "gamma": 1 } ] }, { "featureType": "water", "stylers": [ { "hue": "#0078FF" }, { "saturation": -13.200000000000003 }, { "lightness": 2.4000000000000057 }, { "gamma": 1 } ] }, { "featureType": "poi", "stylers": [ { "hue": "#00FF6A" }, { "saturation": -1.0989010989011234 }, { "lightness": 11.200000000000017 }, { "gamma": 1 } ] } ]',
+          },
+          blueEssence: {
+            label: "Blue essence",
+            style:
+              '[ { "featureType": "landscape.natural", "elementType": "geometry.fill", "stylers": [ { "visibility": "on" }, { "color": "#e0efef" } ] }, { "featureType": "poi", "elementType": "geometry.fill", "stylers": [ { "visibility": "on" }, { "hue": "#1900ff" }, { "color": "#c0e8e8" } ] }, { "featureType": "road", "elementType": "geometry", "stylers": [ { "lightness": 100 }, { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "labels", "stylers": [ { "visibility": "off" } ] }, { "featureType": "transit.line", "elementType": "geometry", "stylers": [ { "visibility": "on" }, { "lightness": 700 } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "color": "#7dcdcd" } ] } ]',
+          },
+          appleMapsesque: {
+            label: "Apple maps-esque",
+            style:
+              '[ { "featureType": "landscape.man_made", "elementType": "geometry", "stylers": [ { "color": "#f7f1df" } ] }, { "featureType": "landscape.natural", "elementType": "geometry", "stylers": [ { "color": "#d0e3b4" } ] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry", "stylers": [ { "visibility": "off" } ] }, { "featureType": "poi", "elementType": "labels", "stylers": [ { "visibility": "off" } ] }, { "featureType": "poi.business", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "poi.medical", "elementType": "geometry", "stylers": [ { "color": "#fbd3da" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#bde6ab" } ] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road", "elementType": "labels", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [ { "color": "#ffe15f" } ] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [ { "color": "#efd151" } ] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [ { "color": "#ffffff" } ] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [ { "color": "black" } ] }, { "featureType": "transit.station.airport", "elementType": "geometry.fill", "stylers": [ { "color": "#cfb2db" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "color": "#a2daf2" } ] } ]',
+          },
+          paleDawn: {
+            label: "Pale dawn",
+            style:
+              '[ { "featureType": "administrative", "elementType": "all", "stylers": [ { "visibility": "on" }, { "lightness": 33 } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "color": "#f2e5d4" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#c5dac6" } ] }, { "featureType": "poi.park", "elementType": "labels", "stylers": [ { "visibility": "on" }, { "lightness": 20 } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "lightness": 20 } ] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [ { "color": "#c5c6c6" } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#e4d7c6" } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "color": "#fbfaf7" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "visibility": "on" }, { "color": "#acbcc9" } ] } ]',
+          },
+          neutralBlue: {
+            label: "Neutral blue",
+            style:
+              '[ { "featureType": "water", "elementType": "geometry", "stylers": [ { "color": "#193341" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "color": "#2c5a71" } ] }, { "featureType": "road", "elementType": "geometry", "stylers": [ { "color": "#29768a" }, { "lightness": -37 } ] }, { "featureType": "poi", "elementType": "geometry", "stylers": [ { "color": "#406d80" } ] }, { "featureType": "transit", "elementType": "geometry", "stylers": [ { "color": "#406d80" } ] }, { "elementType": "labels.text.stroke", "stylers": [ { "visibility": "on" }, { "color": "#3e606f" }, { "weight": 2 }, { "gamma": 0.84 } ] }, { "elementType": "labels.text.fill", "stylers": [ { "color": "#ffffff" } ] }, { "featureType": "administrative", "elementType": "geometry", "stylers": [ { "weight": 0.6 }, { "color": "#1a3541" } ] }, { "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#2c5a71" } ] } ]',
+          },
+          avocadoWorld: {
+            label: "Avocado world",
+            style:
+              '[ { "featureType": "water", "elementType": "geometry", "stylers": [ { "visibility": "on" }, { "color": "#aee2e0" } ] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [ { "color": "#abce83" } ] }, { "featureType": "poi", "elementType": "geometry.fill", "stylers": [ { "color": "#769E72" } ] }, { "featureType": "poi", "elementType": "labels.text.fill", "stylers": [ { "color": "#7B8758" } ] }, { "featureType": "poi", "elementType": "labels.text.stroke", "stylers": [ { "color": "#EBF4A4" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "visibility": "simplified" }, { "color": "#8dab68" } ] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [ { "color": "#5B5B3F" } ] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [ { "color": "#ABCE83" } ] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "color": "#A4C67D" } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#9BBF72" } ] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [ { "color": "#EBF4A4" } ] }, { "featureType": "transit", "stylers": [ { "visibility": "off" } ] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [ { "visibility": "on" }, { "color": "#87ae79" } ] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [ { "color": "#7f2200" }, { "visibility": "off" } ] }, { "featureType": "administrative", "elementType": "labels.text.stroke", "stylers": [ { "color": "#ffffff" }, { "visibility": "on" }, { "weight": 4.1 } ] }, { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [ { "color": "#495421" } ] }, { "featureType": "administrative.neighborhood", "elementType": "labels", "stylers": [ { "visibility": "off" } ] } ]',
+          },
+          gowalla: {
+            label: "Gowalla",
+            style:
+              '[ { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "poi", "elementType": "labels", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road", "elementType": "labels", "stylers": [ { "visibility": "simplified" }, { "lightness": 20 } ] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [ { "hue": "#f49935" } ] }, { "featureType": "road.highway", "elementType": "labels", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "hue": "#fad959" } ] }, { "featureType": "road.arterial", "elementType": "labels", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.local", "elementType": "labels", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "hue": "#a1cdfc" }, { "saturation": 30 }, { "lightness": 49 } ] } ]',
+          },
+        },
+        facebookAppId: "",
+        headerPosition: "top",
+        offsetLazyLoad: "300",
+        useQueryFilter: "",
+        pageFilters: [],
+        language: "",
+        wpmlUrlFormat: "",
+        multilangPlugin: "",
+        i18n: {
+          openMobileMenu: "Open mobile menu",
+          closeMobileMenu: "Close mobile menu",
+        },
+      };
+    </script>
+    <script
+      src="./wp-content/themes/bricks/assets/js/bricks.min.js?ver=1730383603"
+      id="bricks-scripts-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/local_assets/bc_gsap.min.js?ver=1.6.3.3"
+      id="bc_gsap_enable-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/local_assets/bc_scrolltrigger.min.js?ver=1.6.3.3"
+      id="bc_scrolltrigger_enable-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/local_assets/bc_splittext.min.js?ver=1.6.3.3"
+      id="bc_splittext_enable-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/elements/js/bc_unfold_reveal.min.js?ver=1.6.3.3"
+      id="bc-unfold-reveal-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/elements/js/bc_lottie.min.js?ver=1.6.3.3"
+      id="bclottie-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/local_assets/bc_lottie-player.min.js?ver=1.6.3.3"
+      id="lottieplayer-js-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/nextbricks/local_assets/bc_lottie-interactivity.min.js?ver=1.6.3.3"
+      id="lottieinteractivity-js-js"
+    ></script>
+  </body>
+</html>
+
+<!-- Page cached by LiteSpeed Cache 6.5.2 on 2024-12-01 16:36:41 -->
